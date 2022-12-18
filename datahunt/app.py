@@ -43,11 +43,10 @@ def submit(file, exercise):
 
     result = json.loads(res.data)
 
-    print(f"Exercise: {exercise}")
     if result == "True":
-        print(f"Pass: {bcolors.OKGREEN}{result}{bcolors.ENDC}")
+        print(f"Exercise: {exercise} | Status {bcolors.OKGREEN}PASS{bcolors.ENDC}")
     else:
-        print(f"Pass: {bcolors.WARNING}{result}{bcolors.ENDC}")
+        print(f"Exercise: {exercise} | Status {bcolors.FAIL}FAIL{bcolors.ENDC}")
 
 
 if __name__ == "__main__":
