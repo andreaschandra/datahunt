@@ -18,8 +18,10 @@ def get_connection():
     Returns:
         _type_: _description_
     """
-    
-    conn = psycopg2.connect(host=db_host, port=db_port, user=db_user, password=db_pass, dbname=db_name)
+
+    conn = psycopg2.connect(
+        host=db_host, port=db_port, user=db_user, password=db_pass, dbname=db_name
+    )
     cursor = conn.cursor()
 
     return conn, cursor

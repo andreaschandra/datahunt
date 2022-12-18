@@ -1,1 +1,3 @@
-curl -X POST localhost:5000/checkdata -H "Content-Type: application/json" -d '{"query": "SELECT * FROM customers"}'
+curl -X POST http://127.0.0.1:8000/checkdata -H "Content-Type: application/json" -d '{"query": "SELECT * FROM customer", "exercise": "esql1"}'
+
+curl -X POST https://datahunt.fly.dev/checkdata -H "Content-Type: application/json" -d '{"query": "SELECT * FROM customers", "exercise": "esql1"}'

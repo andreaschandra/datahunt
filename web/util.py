@@ -1,4 +1,4 @@
 def generate_answer_query(exercise):
-    query = """SELECT * FROM {exercise}"""
+    query = f"""SELECT * FROM {exercise}"""
 
     return query
